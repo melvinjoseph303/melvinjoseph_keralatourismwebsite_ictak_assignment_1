@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KERALA TOURISM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: black;
+      padding: 25px;
+      color: white;
+    }
+
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      /* min-height: 200px; */
+      height: 560px !important;
+    }
+
+    .col-sm-4 img{
+      height: 265px;
+    }
+
+    .well{
+      height: 560px !important;
+      font-size: 1.15vw;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/keralalogo.jpeg" style="width:90px;margin-top: -15px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="district.html">Districts</a></li>
+        <!-- <li><a href="#">Contact</a></li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<div class="row">
+  <div class="col-sm-8">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/pkd_Malmpuzha-Dam-Palakkad.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h3>Malmpuzha Dam</h3>
+            
+          </div>      
+        </div>
+
+        <div class="item">
+          <img src="images/pkd_Parambikulam-Tiger-REserve.jpg" alt="Image">
+          <div class="carousel-caption">
+            <h3>Parambikulam Tiger Reserve</h3>
+       
+          </div>      
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="well">
+      <p><b>Palakkad</b> is the best known place in the Kerala state due to its evergreen nature and long lasting beauty. There are many of the visiting places that makes increase the beauty of this place like Fort, waterfalls, hills, mountains, rivers, lake and temples.The name of the town is Palakkad is based the old and historical fort named as Palakkad Fort. This fort is used during the time of Tipu Sultan. The large space between the fort and Palakkad town is enclosed by the ground area. This is said that here the tipu sultan trained their army of elephants and horses.
+
+        The other place is the fantasy water park where you can easily see the format of all the water activities also you are able to play the same games. This is so famous place for visiting with your family.
+        
+        Next place is Dhoni waterfalls, it is only the place that is love of all the people. When the water falls below from such heights and its drops touches your body, this time is very pleasant. Every person wants to submerge in water for a whole day and every children, tourists are enjoying the lot in this place.</p>
+    </div>
+    
+  </div>
+</div>
+<hr>
+</div>
+
+<div class="container text-center">    
+  <h3>Important Places</h3>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="images/pkd_Malmpuzha-Dam-Palakkad.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>Malmpuzha Dam</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="images/pkd_Mukurthi-national-park.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>Mukurthi national park</p>    
+    </div>
+    <div class="col-sm-4">
+        <img src="images/Palakkad_Fort-25102019110539.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <p>Palakkad Fort</p>
+    </div>
+    
+  </div>
+  <hr>
+</div>
+
+<br>
+
+<footer class="container-fluid text-center">
+  <p>Copyright<i class="fa fa-copyright" aria-hidden="true"></i>
+    kerala-tourism</p>
+</footer>
+
+</body>
+</html>

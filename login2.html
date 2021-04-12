@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KERALA TOURISM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: black;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/keralalogo.jpeg" style="width:90px;margin-top: -15px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="district.html">Districts</a></li>
+        <!-- <li><a href="#">Contact</a></li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-4 sidenav">
+      <!-- <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p> -->
+    </div>
+    <div class="col-sm-4 text-left"> 
+      <h1>Welcome</h1>
+      <form class="form-horizontal" name="form1" action="index.html" onsubmit="return validate()">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Enter email" name="email" onchange="return validateEmail(this)">
+            <label for="emailerror" id="emailerror" class="form-label"></label>
+          </div>        
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">Password:</label>
+          <div class="col-sm-10">          
+            <input type="password" class="form-control" id="psw-input" name="pwd">
+            <div id="pswmeter" class="mt-3"></div>
+            <div id="pswmeter-message" class="mt-3"></div>
+          </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Phone No:</label>
+            <div class="col-sm-10">          
+                <input type="text" class="form-control" id="phoneno" name="phoneno" onchange="return phonenumber(document.form1.phoneno)">
+              <label for="phonenoerror" id="phonenoerror" class="form-label"></label>
+            </div>
+          </div>
+        <div class="form-group">        
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-info">Submit</button>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+    <div class="col-sm-4 sidenav">
+      <!-- <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Copyright<i class="fa fa-copyright" aria-hidden="true"></i>
+    kerala-tourism</p>
+</footer>
+<script src="js/pswmeter.min.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+    
+      // Run pswmeter with options
+      const myPassMeter = passwordStrengthMeter({
+        containerElement: '#pswmeter',
+        passwordInput: '#psw-input',
+        showMessage: true,
+        messageContainer: '#pswmeter-message',
+        messagesList: [
+          'Write your password...',
+          'Bad',
+          'Weak',
+          'Good',
+          'Strong'
+        ],
+        height: 6,
+        borderRadius: 0,
+        pswMinLength: 8,
+        colorScore1: 'red',
+        colorScore2: 'orange',
+        colorScore3: 'yellow',
+        colorScore4: 'limegreen'
+      });
+      
+      </script>
+</body>
+</html>
